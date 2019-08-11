@@ -59,11 +59,11 @@
 \mobile{+44 (0)77 4634 6922}
 %%% Social
 \email{ferrari.filippo@outlook.com}
-\homepage{filippoferrari.co.uk}
+% \homepage{filippoferrari.co.uk}
 \github{filippoferrari}
 \linkedin{frrfpp}
 %%% Optionals
-\position{2nd Year Artificial Intelligence student{\enskip\cdotp\enskip}The University of Manchester}
+\position{BSc Artificial Intelligence {\enskip\cdotp\enskip}The University of Manchester}
 %\quote{}
 
 
@@ -72,7 +72,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
-  {\today}
+  {\DTMlangsetup{showdayofmonth=false}
+  \today
+  \DTMlangsetup{showdayofmonth=true}}
   {Filippo Ferrari~~~·~~~CV}
   {\thepage}
 
@@ -83,6 +85,8 @@
 %%% Import contents
 \import{\sectiondir}{education.tex}
 \import{\sectiondir}{experience.tex}
+\newpage
+\import{\sectiondir}{honors.tex}
 \import{\sectiondir}{volunteering.tex}
 \import{\sectiondir}{software_skills.tex}
 % \import{\sectiondir}{interests.tex}
