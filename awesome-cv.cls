@@ -87,7 +87,8 @@
   pdfsubject={},
   pdfkeywords={}
 }
-
+% For today command
+\RequirePackage[en-GB]{datetime2}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
