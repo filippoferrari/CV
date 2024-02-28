@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[super]{nth}
+\usepackage{layout}
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.25in} % Default was -.5in
+% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-0pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-0pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+    \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}%\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2}
+    \end{tabular*}\\%\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\tiny\raisebox{0.5ex}{\textbullet}}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+% \begin{flushright}
+%   % \vspace{-4pt}
+%   \color{gray}
+%   \item
+%   Last Updated on January 12th, 2024
+% \end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Filippo Ferrari} \small{he/they}\\ \vspace{8pt}
+    \small
+    \faIcon{github}
+    \href{https://github.com/filippoferrari}{\underline{filippoferrari}} $  $
+    \faIcon{globe}
+    \href{https://filippoferrari.github.io}
+    {\underline{filippoferrari.github.io}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/frrfpp}{\underline{frrfpp}} $  $
+    \faIcon{envelope}
+    \href{mailto:ferrari.filippo@outlook.com}
+    {\underline{ferrari.filippo@outlook.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{PhD Computational Psychiatry}{2020 - 2024}
+{University of Edinburgh, School of Informatics}{}
+\resumeItemListStart
+
+\resumeItem{Thesis: \textit{Computational Modelling of Behavioural Differences in Anxiety Disorders}}
+\resumeItemListEnd
+
+\resumeSubheading
+{MSc Artificial Intelligence}{2019 - 2020}
+{University of Edinburgh, School of Informatics}{Distinction}
+\resumeItemListStart
+
+\resumeItem{Dissertation: \textit{Insects’ Central Complex Path Integration model using Spiking Neurons}}\\
+\resumeItem{Courses: Machine Learning and Pattern Recognition, Computational Cognitive Neuroscience, Deep Learning, Advanced Computer Vision}
+\resumeItemListEnd
+
+\resumeSubheading
+{BSc Artificial Intelligence with Industrial Experience}{2015 - 2019}
+{University of Manchester, School of Computer Science}{First Class}
+\resumeItemListStart
+\resumeItem{Final Year Project: \textit{Spiking Neural Network Shape Detector}}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Innovative Technology Ltd.} $|$ \footnotesize\emph{Data Scientist}\vspace{8pt}}{2017 - 2019}
+{\small{Involved in researching, developing, implementing and shipping novel on-device Machine Learning and Computer Vision algorithms for banknote validators.}}
+
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\resumeItemListStart
+
+\resumeItem{\textbf{Ferrari, F.}, Alexander, J., Seriès, P. (2023). Risk and loss aversion and attitude to COVID and vaccines in anxious individuals [Preprint]. \href{https://doi.org/10.1101/2023.05.05.539520}{bioRxiv \faIcon{link}}}
+\resumeItemListEnd
+
+
+
+\section{Presentations}
+\resumeItemListStart
+\resumeItem{Poster Presentation - Eleventh Symposium on Biology of Decision Making (SBDM 2023), Paris 2023}
+\resumeItemListEnd
+
+
+
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{University of Edinburgh} $|$ \footnotesize\emph{Teaching Support Provider}\vspace{8pt}}{2020 - 2024}
+\resumeItemListStart
+\resumeItem{Co-supervision of BSc and MSc projects.}
+\resumeItem{Computational Cognitive Neuroscience (MSc Level): Marker and coursework design.}
+\resumeItem{Foundations of Data Science (BSc Level): Tutor and Marker.}
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+
+          \textbf{Languages}{: Python, R, MATLAB, C/C++, JavaScript, HTML/CSS, \LaTeX} \\
+          \textbf{Techniques}{: Bayesian Modelling, Reinforcement Learning, Online Human Behavioural Experiments, Drift Diffusion Models, Prospect Theory, Data Science, Computer Vision}\\
+          \textbf{Tools}{: PyMC, Prolific, JsPsych, Numpy, Pandas, PyTorch}
+          }}
+\end{itemize}
+
+
+\end{document}
