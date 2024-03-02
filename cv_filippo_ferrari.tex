@@ -52,8 +52,8 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-0pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-0pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Subsection formatting
 \titleformat{\subsection}{
@@ -66,16 +66,16 @@
 % -------------------- CUSTOM COMMANDS --------------------
 \newcommand{\resumeItem}[1]{
     \item\small{
-    {#1 \vspace{0pt}}
+    {\vspace{-2pt} #1}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{+1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}%\vspace{-7pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -89,10 +89,10 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{0pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[label={\tiny\raisebox{0.5ex}{\textbullet}}]}
@@ -130,73 +130,97 @@
     {\underline{ferrari.filippo@outlook.com}}
 \end{center}
 
+
+\section{Summary}
+\small{I am a final year PhD student in Computational Psychiatry, with two years of experience as a Data Scientist, interested in developing tools and technologies aimed at helping diagnosing and delivering interventions for mental health disorders. My expertise is in anxiety, decision-making and Bayesian computational models of behaviour.}
+
+
 % -------------------- EDUCATION --------------------
 \section{Education}
 \resumeSubHeadingListStart
+  \resumeSubheading
+  {PhD Computational Psychiatry}{2020 - 2024}
+  {University of Edinburgh, School of Informatics}{}
+  \resumeItemListStart
+    \resumeItem{Thesis: \textit{Computational Modelling of Behavioural Differences in Anxiety Disorders}}
+  \resumeItemListEnd
 
-\resumeSubheading
-{PhD Computational Psychiatry}{2020 - 2024}
-{University of Edinburgh, School of Informatics}{}
-\resumeItemListStart
+  \resumeSubheading
+  {MSc Artificial Intelligence}{2019 - 2020}
+  {University of Edinburgh, School of Informatics}{Distinction}
+  \resumeItemListStart
+    \resumeItem{Dissertation: \textit{Insects’ Central Complex Path Integration model using Spiking Neurons}}\\
+    \resumeItem{Courses: Machine Learning and Pattern Recognition, Computational Cognitive Neuroscience, Deep Learning, Advanced Computer Vision}
+  \resumeItemListEnd
 
-\resumeItem{Thesis: \textit{Computational Modelling of Behavioural Differences in Anxiety Disorders}}
-\resumeItemListEnd
-
-\resumeSubheading
-{MSc Artificial Intelligence}{2019 - 2020}
-{University of Edinburgh, School of Informatics}{Distinction}
-\resumeItemListStart
-
-\resumeItem{Dissertation: \textit{Insects’ Central Complex Path Integration model using Spiking Neurons}}\\
-\resumeItem{Courses: Machine Learning and Pattern Recognition, Computational Cognitive Neuroscience, Deep Learning, Advanced Computer Vision}
-\resumeItemListEnd
-
-\resumeSubheading
-{BSc Artificial Intelligence with Industrial Experience}{2015 - 2019}
-{University of Manchester, School of Computer Science}{First Class}
-\resumeItemListStart
-\resumeItem{Final Year Project: \textit{Spiking Neural Network Shape Detector}}
-\resumeItemListEnd
-
-
+  \resumeSubheading
+  {BSc Artificial Intelligence with Industrial Experience}{2015 - 2019}
+  {University of Manchester, School of Computer Science}{First Class}
+  \resumeItemListStart
+    \resumeItem{Final Year Project: \textit{Spiking Neural Network Shape Detector}}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\section{Experience}
+
+
+
+% -------------------- Work Experience --------------------
+
+\section{Work Experience}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Innovative Technology Ltd.} $|$ \footnotesize\emph{Data Scientist}\vspace{8pt}}{2017 - 2019}
-{\small{Involved in researching, developing, implementing and shipping novel on-device Machine Learning and Computer Vision algorithms for banknote validators.}}
+  \resumeSubheading
+  {Data Scientist}{2017 - 2019}
+  {Innovative Technology Ltd.}{Manchester, UK}
+  \resumeItemListStart
+    \resumeItem{Involved in researching, developing, implementing and shipping novel on-device Machine Learning and Computer Vision algorithms for banknote validators}
+  \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+
+
+
+
+% -------------------- Publications --------------------
 
 \section{Publications}
+\vspace{+4pt}
 \resumeItemListStart
-
-\resumeItem{\textbf{Ferrari, F.}, Alexander, J., Seriès, P. (2023). Risk and loss aversion and attitude to COVID and vaccines in anxious individuals [Preprint]. \href{https://doi.org/10.1101/2023.05.05.539520}{bioRxiv \faIcon{link}}}
+  \resumeItem{\textbf{Ferrari, F.}, Alexander, J., Seriès, P. (2023). Risk and loss aversion and attitude to COVID and vaccines in anxious individuals [Preprint]. \href{https://doi.org/10.1101/2023.05.05.539520}{bioRxiv \faIcon{link}}}
 \resumeItemListEnd
 
 
+% -------------------- Presentations --------------------
 
 \section{Presentations}
-\resumeItemListStart
-\resumeItem{Poster Presentation - Eleventh Symposium on Biology of Decision Making (SBDM 2023), Paris 2023}
-\resumeItemListEnd
+\resumeSubHeadingListStart
+  \vspace{+2pt}
+  \resumeProjectHeading
+  {Poster Presentation $|$ Eleventh Symposium on Biology of Decision Making (SBDM)}{Paris 2023}
+\resumeSubHeadingListEnd
+
+% \resumeItem{Poster Presentation - Eleventh Symposium on Biology of Decision Making (SBDM), Paris 2023}
+% \resumeItemListEnd
 
 
+
+% -------------------- Teaching Experience --------------------
 
 \section{Teaching Experience}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{University of Edinburgh} $|$ \footnotesize\emph{Teaching Support Provider}\vspace{8pt}}{2020 - 2024}
-\resumeItemListStart
-\resumeItem{Co-supervision of BSc and MSc projects.}
-\resumeItem{Computational Cognitive Neuroscience (MSc Level): Marker and coursework design.}
-\resumeItem{Foundations of Data Science (BSc Level): Tutor and Marker.}
-\resumeItemListEnd
-
-
-
+  \resumeProjectHeading
+  {\textbf{University of Edinburgh} $|$ \footnotesize\emph{Teaching Support Provider}\vspace{-10pt}}{2020 - 2024}
+  \resumeItemListStart
+    \resumeItem{Co-supervision of BSc and MSc projects.}
+    \resumeItem{Computational Cognitive Neuroscience (MSc Level): Marker and coursework design.}
+    \resumeItem{Foundations of Data Science (BSc Level): Tutor and Marker.}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
+
+
+
+
+
 
 % -------------------- SKILLS --------------------
 \section{Skills}
